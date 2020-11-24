@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Adarsh Balika | Krisha E</title>
+    <link rel="stylesheet" href="styles.css"/> 
 </head>
 
 <body>
@@ -34,22 +35,22 @@
     <hr>
 
     <h2>@links</h2>
-    <a href="#">Primary Link</a>
-    <a href="#">Secondary Link</a>
+    <a href="#" class="link-primary">Primary Link</a>
+    <a href="#" class="link-secondary">Secondary Link</a>
 
     <hr>
 
     <h2>@lists</h2>
     <h3>unordered lists</h3>
     <p>We don't want to show bullets in the unordered list. We'll remove that with CSS.</p>
-    <ul>
+    <ul class="list-ul">
         <li>item one</li>
         <li>item two</li>
         <li>item three</li>
     </ul>
     <h3>inline lists</h3>
     <p>Instead of going in a new row, we will create a list which will take columns.</p>
-    <ul>
+    <ul class="list-ul list-inline">
         <li>item one</li>
         <li>item two</li>
         <li>item three</li>
@@ -66,9 +67,9 @@
 
     <h2>@nav</h2>
     <p>Navigation is used on the top of the page and used to get to different pages</p>
-    <nav>
-    <div>theBrandName</div>
-        <ul>
+    <nav class="navigation">
+    <p><strong>theBrandName</strong></p>
+        <ul class="list-ul">
             <li><a href="#">Home</a></li>
             <li><a href="#">Products</a></li>
             <li><a href="#">About</a></li>
@@ -78,7 +79,7 @@
     <hr>
 
     <h2>@header</h2>
-    <header>
+    <header class="container">
         <img src="images/header.svg">
         <h1>this is heading h1 inside header
         </h1>

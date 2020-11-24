@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;500;600&display=swap');
+
+:root{
+    --primary: #F50057;
+}
+
+body{
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 500;
+}
+
+.link-primary{
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    background-color:var(--primary);
+    border-radius: 0.5rem;
+    padding: 0.5rem 1rem;
+    margin-top: 0.5rem;
+    margin-right: 0.5rem;
+    /* font-size: 1em; */
+}
+
+.link-secondary{
+    display: inline-block;
+    text-decoration: none;
+    color: var(--primary);
+    border: 1px solid var(--primary);
+    border-radius: 0.5rem;
+    padding: 0.5rem 1rem;
+    margin-top: 0.5rem;
+    margin-right: 0.5rem;
+    /* font-size: 1em; */
+}
+
+hr{
+    margin: 2rem 0;
+}
+
+.list-ul{
+    list-style: none;
+}
+
+.list-inline li{
+    display: inline;
+    margin: 0rem 0.5rem;
+    /* padding: 0rem 0.5rem; */
+}
+
+.navigation{    
+    background-color:var(--primary);
+    border-bottom-left-radius: 1rem;
+    padding: 1.5rem 2rem;    
+    color: white;
+}
+
+.navigation p{
+    margin-block-start: 0em;  
+    margin-block-end: 0em;
+    /* had to fix from Elements */
+}
+
+.navigation ul{
+    text-align: right;
+    margin-block-start: 0em;
+    margin-block-end: 0em;
+    /* had to fix from Elements */
+}
+
+.navigation li{
+    display: inline;    
+}
+
+.navigation li a{    
+    text-decoration: none;
+    color: white; 
+    padding: 0rem 0.7rem;   
+}
+
+.container {
+    margin: auto;
+    max-width: 600px;
+}
+
+.container img{
+    display: block;
+    margin: auto;
+    max-width: 600px;
+}
