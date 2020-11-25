@@ -2,11 +2,14 @@
 
 :root{
     --primary: #F50057;
+    --gray: #6B7280;
+    --lightgray: #F3F4F6;
 }
 
 body{
     font-family: 'Quicksand', sans-serif;
     font-weight: 500;
+    margin: 0;
 }
 
 .link-primary{
@@ -47,43 +50,77 @@ hr{
     /* padding: 0rem 0.5rem; */
 }
 
-.navigation{    
+nav{    
     background-color:var(--primary);
     border-bottom-left-radius: 1rem;
     padding: 1.5rem 2rem;    
     color: white;
 }
 
-.navigation p{
+nav p{
     margin-block-start: 0em;  
     margin-block-end: 0em;
     /* had to fix from Elements */
 }
 
-.navigation ul{
+nav ul{
     text-align: right;
     margin-block-start: 0em;
     margin-block-end: 0em;
     /* had to fix from Elements */
 }
 
-.navigation li{
+nav li{
     display: inline;    
 }
 
-.navigation li a{    
+nav li a{    
     text-decoration: none;
     color: white; 
     padding: 0rem 0.7rem;   
 }
 
-.container {
+.container-center {
     margin: auto;
     max-width: 600px;
 }
 
-.container img{
+.container-center img{
     display: block;
     margin: auto;
     max-width: 600px;
+}
+
+header h1{
+    color: var(--gray);
+}
+
+section{
+    padding: 1rem;
+}
+
+section h2{
+    text-align: center;
+}
+
+.section-off-white{
+    background-color: var(--lightgray);
+}
+
+footer{
+    color: white;
+    background-color: var(--primary);
+    padding: 1.5rem 2rem;
+    border-top-right-radius: 1rem;
+}
+
+footer h3{
+    margin: 1rem;
+    text-align: center;
+}
+
+footer ul{
+    margin: 1rem;
+    text-align: center;
+    padding-inline-start: 0px;
 }

@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Adarsh Balika | Krisha E</title>
-    <link rel="stylesheet" href="styles.css"/> 
+    <link rel="stylesheet" href="styles.css" />
 </head>
 
 <body>
@@ -14,14 +14,16 @@
         assignment at a time.
     <p>This is a component library created by her to better design each element.</p>
     <p>After creating this library she is going to use the components in her <strong>portfolio, blog and all
-        projects</strong> created. This will ensure that all her projects have <strong>consistent themeing and styling</strong></p>
+            projects</strong> created. This will ensure that all her projects have <strong>consistent themeing and
+            styling</strong></p>
 
     <hr>
 
     <h2>@typography</h2>
     <h1>The biggest heading h1</h1>
     <h2>The second biggest heading h2</h2>
-    <p>This is normal text. Long running text would look like this on your website. This will auto fold based on the width</p>
+    <p>This is normal text. Long running text would look like this on your website. This will auto fold based on the
+        width</p>
     <small>This is relatively smaller text</small>
 
     <hr>
@@ -30,7 +32,8 @@
     <h3>fluid container</h3>
     <p>This is going to be a fluid container. It will go full width of page. With some margin.</p>
     <h3>center container</h3>
-    <p>This is going to be a center container. It will go till a given width and center content.</p>
+    <p class="container-center">This is going to be a center container. It will go till a given width and center
+        content.</p>
 
     <hr>
 
@@ -67,19 +70,21 @@
 
     <h2>@nav</h2>
     <p>Navigation is used on the top of the page and used to get to different pages</p>
-    <nav class="navigation">
-    <p><strong>theBrandName</strong></p>
+    <!-- <div class="margin-zero"> -->
+    <nav>
+        <p><strong>theBrandName</strong></p>
         <ul class="list-ul">
             <li><a href="#">Home</a></li>
             <li><a href="#">Products</a></li>
             <li><a href="#">About</a></li>
         </ul>
     </nav>
+    <!-- </div> -->
 
     <hr>
 
     <h2>@header</h2>
-    <header class="container">
+    <header class="container-center">
         <img src="images/header.svg">
         <h1>this is heading h1 inside header
         </h1>
@@ -88,32 +93,33 @@
     <hr>
 
     <h2>@section</h2>
-    <p>A section is used to separate parts of pages. In marketing websites you would have seen a header followed by sections of features, team, pricing, contact info etc.</p>
+    <p>A section is used to separate parts of pages. In marketing websites you would have seen a header followed by
+        sections of features, team, pricing, contact info etc.</p>
     <h3>@normal section</h3>
     <section>
         <h2>heading inside section</h2>
         <p>Text defining this section and many more things</p>
-        <a href="#">Primary Button</a>
+        <a href="#" class="link-primary">Primary Button</a>
     </section>
     <h3>@off white section</h3>
-    <section>
+    <section class="section-off-white">
         <h2>heading inside off white section</h2>
         <p>Text defining this section and many more things</p>
-        <a href="#">Primary Button</a>
+        <a href="#" class="link-primary">Primary Button</a>
     </section>
 
     <hr>
 
     <h2>@footer</h2>
     <footer>
-        <div>Heading inside footer</div>
-        <ul>
+        <h3>Heading inside footer</h3>
+        <ul class="list-ul list-inline">
             <li>socialone</li>
             <li>socialtwo</li>
             <li>socialthree</li>
         </ul>
     </footer>
-    
+
 
 </body>
 
