@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
 
 :root{
     --primary: #F50057;
@@ -7,9 +8,10 @@
 }
 
 body{
-    font-family: 'Quicksand', sans-serif;
-    font-weight: 500;
-    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    /* margin: 0; */
+    max-width: 1000px;
+    margin: auto;
 }
 
 .link-primary{
@@ -19,7 +21,7 @@ body{
     background-color:var(--primary);
     border-radius: 0.5rem;
     padding: 0.5rem 1rem;
-    margin-top: 0.5rem;
+    /* margin-top: 0.5rem; */
     margin-right: 0.5rem;
     /* font-size: 1em; */
 }
@@ -31,9 +33,22 @@ body{
     border: 1px solid var(--primary);
     border-radius: 0.5rem;
     padding: 0.5rem 1rem;
-    margin-top: 0.5rem;
+    /* margin-top: 0.5rem; */
     margin-right: 0.5rem;
     /* font-size: 1em; */
+}
+
+.link-tertiary{
+    display: inline-block;
+    text-decoration: none;
+    color: var(--primary);
+    /* padding: 0.5rem 1rem;
+    margin-top: 0.5rem;
+    margin-right: 0.5rem; */
+}
+
+.active {
+    font-weight: bolder;
 }
 
 hr{
@@ -51,10 +66,10 @@ hr{
 }
 
 nav{    
-    background-color:var(--primary);
+    background-color:var(--lightgray);
     border-bottom-left-radius: 1rem;
     padding: 1.5rem 2rem;    
-    color: white;
+    color: var(--primary);
 }
 
 nav p{
@@ -62,6 +77,7 @@ nav p{
     margin-block-end: 0em;
     /* had to fix from Elements */
 }
+
 
 nav ul{
     text-align: right;
@@ -76,31 +92,41 @@ nav li{
 
 nav li a{    
     text-decoration: none;
-    color: white; 
+    color: var(--primary); 
     padding: 0rem 0.7rem;   
 }
 
 .container-center {
     margin: auto;
-    max-width: 600px;
+    max-width: 1000px;
 }
 
 .container-center img{
     display: block;
     margin: auto;
-    max-width: 600px;
+    max-width: 300px;
+}
+
+header {
+    padding: 2rem 1rem;
 }
 
 header h1{
     color: var(--gray);
+    text-align: center;
+}
+
+header p{
+    text-align: center;
 }
 
 section{
-    padding: 1rem;
+    padding: 2rem;
 }
 
 section h2{
-    text-align: center;
+    margin-block-start: 0em;
+    margin-block-end: 0em;
 }
 
 .section-off-white{
@@ -124,3 +150,12 @@ footer ul{
     text-align: center;
     padding-inline-start: 0px;
 }
+
+.date {
+    margin-bottom: -0.7rem;
+    font-size: 0.8rem;
+ }
+
+ article h1{
+    margin-block-start: 1em;
+ }
