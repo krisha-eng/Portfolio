@@ -77,7 +77,8 @@ hr{
     margin: 0rem;
 }
 
-.list-inline-bullets li:after { content: "|"; 
+.list-inline-bullets li:after { 
+    content: "|"; 
     /* font-weight: bold; */
     /* font-size: 1rem; */
     text-align: center;
@@ -90,6 +91,22 @@ hr{
     color: var(--gray);
 }
 
+@media only screen and (max-width: 600px) {
+    .list-inline-bullets li{
+        list-style: none; 
+        display: block;
+        font-size: 0.9rem;
+        padding: 0.2em 0em;
+        margin: 0rem;
+    }
+    .list-inline-bullets li:after { 
+        content: none; 
+    }
+    .link-primary{
+        margin-bottom: 0.8rem;
+    }
+}
+
 nav{    
     background-color:var(--lightgray);
     border-bottom-left-radius: 1rem;
@@ -100,6 +117,7 @@ nav{
 nav p{
     margin-block-start: 0em;  
     margin-block-end: 0em;
+    font-size: larger;
     /* had to fix from Elements */
 }
 
@@ -188,3 +206,39 @@ footer ul{
  article h1{
     margin-block-start: 1em;
  }
+
+ .fa {    
+    padding: 20px; 
+    font-size: 25px;   
+    width: 25px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px;
+    border-radius: 50%;
+    
+  }
+  
+  .fa:hover {
+      opacity: 0.8;
+  }
+
+ .fa-linkedin {
+    background: rgba(255, 255, 255, 0.596);
+    color: var(--primary);    
+  }
+
+  .fa-github {
+    background:  rgba(255, 255, 255, 0.596);
+    color: var(--primary);    
+  }
+
+  .fa-twitter {
+    background:  rgba(255, 255, 255, 0.596);
+    color: var(--primary);  
+  }
+
+  ol{
+    padding-inline-end: 40px;
+    margin-block-start: 2em;
+    margin-block-end: 2em;
+  }
